@@ -1,0 +1,4 @@
+{
+  "connectionString":  "mongodb+srv://mymy:devmymy@sandbox.v2ifo.mongodb.net/wallet?retryWrites=true&w=majority",
+  "secret": "pvpnCCZfwOF85pBjbOebZiYIDhZ3w9LZrKwBZ7152K89mPCOHtbRlmr5Z91ci4L"
+}
