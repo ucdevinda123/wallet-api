@@ -12,8 +12,11 @@ please update your credentials in config.json
  #API Endpints :
 #  1.UserModule : 
  SignUp        : `/users/register` : POST
- Login           : `/users/authenticate`   POST (Generate bearer token)   
+ 
+ Login           : `/users/authenticate`   POST (Generate bearer token)  
+ 
  Update        : `/users/:userId` PUT (With bearer token)
+ 
  GetUserInfo : `/users/:userId` GET (With bearer token)
  
  **TODO : Card module, Transaction module.**
