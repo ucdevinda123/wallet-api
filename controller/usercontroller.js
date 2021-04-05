@@ -18,7 +18,9 @@ function authenticate(req, res, next) {
     .then((user) =>
       user
         ? res.json(user)
-        : res.status(400).json({ message: "Username or password is incorrect" })
+        : res
+            .status(400)
+            .json({ message: "Username or password is incorrect", status: 400 })
     )
     .catch((err) => next(err));
 }
@@ -26,7 +28,9 @@ function authenticate(req, res, next) {
 function register(req, res, next) {
   userService
     .create(req.body)
-    .then(() => res.json({}))
+    .then(() =>
+      res.json({ message: "User Registered successfully!", status: 200 })
+    )
     .catch((err) => next(err));
 }
 
@@ -47,13 +51,17 @@ function getById(req, res, next) {
 function update(req, res, next) {
   userService
     .update(req.params.id, req.body)
-    .then(() => res.json({}))
+    .then(() =>
+      res.json({ message: "User Profile updated successfully!", status: 200 })
+    )
     .catch((err) => next(err));
 }
 
 function _delete(req, res, next) {
   userService
     .delete(req.params.id)
-    .then(() => res.json({}))
+    .then(() =>
+      res.json({ message: "User Deleted successfully!", status: 200 })
+    )
     .catch((err) => next(err));
 }
