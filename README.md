@@ -1,4 +1,4 @@
-# wallet-api
+# wallet-api [![CodeFactor](https://www.codefactor.io/repository/github/ucdevinda123/wallet-api/badge)](https://www.codefactor.io/repository/github/ucdevinda123/wallet-api)
 REST API powered by Node JS + Mongo Db  [Atlas]
 
 **Run following command to start locally **
